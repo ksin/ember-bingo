@@ -1,0 +1,118 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100%;
+  background: url(https://ember-api-docs-frontend.global.ssl.fastly.net/assets/images/header-e801b95bf8a1c74fa24400105349672b.svg) top center no-repeat #dd6a58;
+  background-size: cover;
+}
+
+.header {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.bingo-board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 720px;
+  border-radius: 3px;
+  margin: 0 auto;
+  background-color: rgb(255,253,250);
+}
+
+.tile {
+  display: flex;
+  font-size: 18px;
+  width: 144px; /* bingo-board width / 5 */
+  padding: 10px;
+  box-sizing: border-box;
+  height: 120px;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  color: #59391e;
+  border: 1px solid #efefef;
+}
+
+.tile:nth-child(1) {
+  border-radius: 3px 0 0 0;
+}
+
+.tile:nth-child(5) {
+  border-radius: 0 3px 0 0;
+}
+
+.tile:nth-child(21) {
+  border-radius: 0 0 0 3px;
+}
+
+.tile:nth-child(25) {
+  border-radius: 0 0 3px 0;
+}
+
+.tile-word {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+.free {
+  font-family: 'Pacifico', cursive;
+}
+
+.selected {
+  color: white;
+  background: rgb(255, 108, 81); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(255, 108, 81,1) 14%, rgba(239, 88, 158,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(255, 108, 81,1) 14%,rgba(239, 88, 158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(255, 108, 81,1) 14%,rgba(239, 88, 158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.win-background {
+  display: flex;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 2px;
+  color: white;
+  background: rgb(229,50,104); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(229,50,104,1) 9%, rgba(32,124,202,1) 73%, rgba(125,185,232,1) 97%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(229,50,104,1) 9%,rgba(32,124,202,1) 73%,rgba(125,185,232,1) 97%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(229,50,104,1) 9%,rgba(32,124,202,1) 73%,rgba(125,185,232,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@media only screen and (min-width: 720px) {
+  .win-background {
+    width: 100%;
+  }
+}
+
+.win-message {
+  color: rgb(253,253,253);
+  position: relative;
+  align-self: center;
+  font-size: 160px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 30px;
+  z-index: 1000;
+}
+
+.tomster {
+  float: left;
+  position: absolute;
+  right: 10%;
+  top: 24%;
+}
