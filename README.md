@@ -1,7 +1,8 @@
 # ember-bingo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+![Gif demo of Ember bingo](https://media.giphy.com/media/l0HUjC0npNocjSlhe/giphy.gif)
+
+To add more buzzwords to the collection, make changes to [app/utils/buzzwords.js](https://github.com/ksin/ember-bingo/blob/master/app/utils/buzzwords.js).
 
 ## Prerequisites
 
