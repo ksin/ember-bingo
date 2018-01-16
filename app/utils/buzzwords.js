@@ -33,7 +33,12 @@ const Buzzwords = [
   'Concurrency',
   'Reactive',
   'Redux',
-  'ES7 / ES2016'
+  'ES7 / ES2016',
+  'Functional CSS',
+  'NPM install your way to Ember',
+  'The World\'s First Temperature Control Mug',
+  'Svelte',
+  'Tree-Shaking'
 ];
 
 // Utility function for randomly splicing a word from Buzzwords
