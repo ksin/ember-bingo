@@ -12,6 +12,7 @@ This app is meant to be fun and silly, so buzzword selection is not strict. Feel
 * Accessibility tests.
 * Some animations to make this smoother and cuter. (ie: better BINGO message)
 * Better responsiveness for odd mobile displays.
+* Players can Tweet their board when they get a bingo.
 
 ## Prerequisites
 
