@@ -14,7 +14,7 @@ const Buzzwords = [
   'Glimmer',
   'Server-side rendering',
   'Machine learning',
-  '11',
+  'Routable Components',
   '12',
   '13',
   '14',
