@@ -24,8 +24,8 @@ const Buzzwords = [
   'Mirage',
   'jQuery',
   'Lint',
-  '21',
-  '22',
+  'Tomster',
+  'Zoey',
   '23',
   '24',
   '25'
