@@ -26,9 +26,14 @@ const Buzzwords = [
   'Lint',
   'Tomster',
   'Zoey',
-  '23',
-  '24',
-  '25'
+  'VM',
+  'Stateless',
+  'Immutable',
+  'HTTP2',
+  'Concurrency',
+  'Reactive',
+  'Redux',
+  'ES7 / ES2016'
 ];
 
 // Utility function for randomly splicing a word from Buzzwords
