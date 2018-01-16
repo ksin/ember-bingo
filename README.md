@@ -2,6 +2,8 @@
 
 ![Gif demo of Ember bingo](https://media.giphy.com/media/l0HUjC0npNocjSlhe/giphy.gif)
 
+[View App](https://ember-bingo.herokuapp.com/)
+
 To add more buzzwords to the collection, make changes to [app/utils/buzzwords.js](https://github.com/ksin/ember-bingo/blob/master/app/utils/buzzwords.js).
 
 ## Prerequisites
@@ -41,7 +43,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+The app is deployed to Heroku. Commit changes via git then `git push heroku master`.
+For now, make sure the app is deployed without a `yarn.lock` file so that it installs packages via npm (bug with yarn install with Heroku deploys).
 
 ## Further Reading / Useful Links
 
