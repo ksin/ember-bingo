@@ -52,7 +52,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 The app is deployed to Heroku. Commit changes via git then `git push heroku master`.
-For now, make sure the app is deployed without a `yarn.lock` file so that it installs packages via npm (bug with yarn install with Heroku deploys).
+For now, make sure the app is deployed without a `yarn.lock` file so that it installs packages via npm (bug with yarn install and Heroku deploys).
 
 ## Further Reading / Useful Links
 
