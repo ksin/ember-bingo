@@ -24,11 +24,14 @@ const Buzzwords = [
   'Mirage',
   'jQuery',
   'Lint',
-  '21',
-  '22',
-  '23',
-  '24',
-  '25'
+  'VM',
+  'Stateless',
+  'Immutable',
+  'HTTP2',
+  'Concurrency',
+  'Reactive',
+  'Redux',
+  'ES7 / ES2016'
 ];
 
 // Utility function for randomly splicing a word from Buzzwords
