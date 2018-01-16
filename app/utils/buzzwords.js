@@ -24,6 +24,8 @@ const Buzzwords = [
   'Mirage',
   'jQuery',
   'Lint',
+  'Tomster',
+  'Zoey',
   'VM',
   'Stateless',
   'Immutable',
