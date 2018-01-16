@@ -15,7 +15,7 @@ const Buzzwords = [
   'Server-side rendering',
   'Machine learning',
   'Routable Components',
-  '12',
+  'DDAU',
   '13',
   '14',
   '15',
