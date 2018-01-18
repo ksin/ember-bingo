@@ -35,6 +35,7 @@ export default Service.extend({
       return EmberObject.create(tile);
     });
     this.set('tiles', tiles);
+    this.saveTiles();
   },
 
   newTiles() {
