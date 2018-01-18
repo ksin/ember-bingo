@@ -9,14 +9,7 @@ This app is meant to be fun and silly, so buzzword selection is not strict. Feel
 
 ## Jobs to Be Done
 
-* Accessibility
-  * Colors
-  * Modal dialog for Bingo! popup (ie: [role=dialog](https://www.w3.org/WAI/GL/wiki/Using_ARIA_role%3Ddialog_to_implement_a_modal_dialog_box))
-* Some animations to make this smoother and cuter.
-* Better responsiveness for odd mobile displays.
-* Players can Tweet their board when they get a bingo.
-* More buzzwords
-* Tests...
+[Lend a hand and open a PR to help with one of these jobs to be done if you want. :)](https://github.com/ksin/ember-bingo/issues/6)
 
 ## Prerequisites
 
