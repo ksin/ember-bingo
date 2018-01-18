@@ -7,7 +7,7 @@
 To add more buzzwords to the collection, make changes to [app/utils/buzzwords.js](https://github.com/ksin/ember-bingo/blob/master/app/utils/buzzwords.js).
 This app is meant to be fun and silly, so buzzword selection is not strict. Feel free to open up a PR to add buzzwords to the bingo board. The only thing we won't allow are people's names or communities. The Ember core team and community is amazing and we shouldn't be mean to them!
 
-## Desired Features
+## Jobs to Be Done
 
 * Accessibility
   * Colors
