@@ -1,5 +1,5 @@
 {{#each tiles as |tile|}}
-  <div class="tile {{if tile.selected "selected"}} {{if tile.free "free"}}"
+  <div role="button" aria-pressed={{tile.selected}} class="tile {{if tile.selected "selected"}} {{if tile.free "free"}}"
     onclick={{action "toggleTileSelect" tile}}>
     <p class="tile-word">{{tile.word}}</p>
   </div>
@@ -8,6 +8,6 @@
 {{#if shouldShowWin}}
   <div class="win-background" {{action (mut showWin) false}}>
     <h2 class="win-message">BINGO!</h2>
-    <img class="tomster" src="http://emberconf.com/images/home/party-tomster@2x.png" width="291" height="416">
+    <img class="tomster" src="/images/party-tomster@2x.png" width="291" height="416" alt="Party Tomster">
   </div>
 {{/if}}

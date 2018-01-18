@@ -9,10 +9,14 @@ This app is meant to be fun and silly, so buzzword selection is not strict. Feel
 
 ## Desired Features
 
-* Accessibility tests.
-* Some animations to make this smoother and cuter. (ie: better BINGO message)
+* Accessibility
+  * Colors
+  * Modal dialog for Bingo! popup (ie: [role=dialog](https://www.w3.org/WAI/GL/wiki/Using_ARIA_role%3Ddialog_to_implement_a_modal_dialog_box))
+* Some animations to make this smoother and cuter.
 * Better responsiveness for odd mobile displays.
 * Players can Tweet their board when they get a bingo.
+* More buzzwords
+* Tests...
 
 ## Prerequisites
 
@@ -34,6 +38,8 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+
+Since this app uses service workers, you will have to wait for a rebuild on every change in order update the app's `sw.js`. See the `ember-service-worker` `versionStrategy` in `ember-cli-build.js`. See the [ember-service-worker documentation on versioning](http://ember-service-worker.com/documentation/configuration/#versioning).
 
 ### Code Generators
 

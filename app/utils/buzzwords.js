@@ -2,7 +2,6 @@
     We need at least 24 words to make a bingo board.
     Make changes directly to this file to add to the list of buzz words
 */
-
 const Buzzwords = [
   'Progressive Web App',
   'TypeScript',
@@ -41,9 +40,19 @@ const Buzzwords = [
   'Tree-Shaking'
 ];
 
-// Utility function for randomly splicing a word from Buzzwords
+// dedicated tmp clone of Buzzwords used by getBuzzword
+let buzzwords = [];
+
+/*  @title getBuzzword
+    @dev Utility function for randomly picking a word from Buzzwords.
+    Instead of directly splicing from Buzzwords[], it is first cloned to buzzwords[],
+    so that the words can be recycled once we've spliced all of them.
+*/
 export function getBuzzword() {
-  return Buzzwords.splice(Math.floor(Math.random()*Buzzwords.length), 1)[0];
+  if (buzzwords.length === 0) {
+    buzzwords = Buzzwords.slice(0);
+  }
+  return buzzwords.splice(Math.floor(Math.random()*buzzwords.length), 1)[0];
 }
 
 export default Buzzwords;

@@ -6,6 +6,9 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    'ember-service-worker': {
+      versionStrategy: 'every-build'
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
