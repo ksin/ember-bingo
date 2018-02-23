@@ -37,7 +37,8 @@ const Buzzwords = [
   'NPM install your way to Ember',
   'The World\'s First Temperature Control Mug',
   'Svelte',
-  'Tree-Shaking'
+  'Tree-Shaking',
+  'Preact'
 ];
 
 // dedicated tmp clone of Buzzwords used by getBuzzword
