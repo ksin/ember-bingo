@@ -28,18 +28,30 @@ body {
   background-color: rgb(255,253,250);
 }
 
+@media only screen and (max-width: 720px) {
+  .bingo-board {
+    width: 100%;
+  }
+}
+
 .tile {
   display: flex;
-  font-size: 18px;
-  width: 144px; /* bingo-board width / 5 */
+  width: 20%; /* bingo-board width / 5 */
   padding: 10px;
   box-sizing: border-box;
   height: 120px;
-  margin: 0;
+  margin: auto;
   cursor: pointer;
   text-align: center;
   color: #59391e;
   border: 1px solid #efefef;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 720px) {
+  .tile {
+    width: 20%;
+  }
 }
 
 .tile:nth-child(1) {
@@ -70,6 +82,34 @@ body {
   font-size: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+  .tile {
+    font-size: 16px;
+  }
+  .free {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tile {
+    font-size: 14px;
+  }
+  .free {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .tile {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .free {
+    font-size: 18px;
+  }
+}
+
 .selected {
   color: white;
   background: rgb(255, 108, 81); /* Old browsers */
@@ -85,7 +125,7 @@ body {
   cursor: pointer;
   height: 100%;
   text-align: center;
-  padding: 30px;
+  padding: 0px;
   border-radius: 2px;
   color: white;
   margin: 0;
@@ -93,19 +133,16 @@ body {
   background: -moz-linear-gradient(45deg, rgba(229,50,104,1) 9%, rgba(32,124,202,1) 73%, rgba(125,185,232,1) 97%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, rgba(229,50,104,1) 9%,rgba(32,124,202,1) 73%,rgba(125,185,232,1) 97%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, rgba(229,50,104,1) 9%,rgba(32,124,202,1) 73%,rgba(125,185,232,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-@media only screen and (min-width: 720px) {
-  .win-background {
-    width: 100%;
-  }
+  width: 100%;
+  padding-bottom: 120px;
+  z-index: 900;
 }
 
 .win-message {
   color: rgb(253,253,253);
   position: relative;
   align-self: center;
-  font-size: 160px;
+  font-size: 140px;
   text-align: center;
   width: 100%;
   letter-spacing: 30px;
@@ -116,9 +153,66 @@ body {
   float: left;
   position: absolute;
   right: 10%;
-  top: 24%;
+  top: 25%;
   transform: rotate(15deg);
   z-index: 1001;
+  height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .win-message {
+    font-size: 100px;
+    letter-spacing: 25px;
+  }
+  .tomster {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .win-message {
+    font-size: 100px;
+    letter-spacing: 20px;
+  }
+  .tomster {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .win-message {
+    font-size: 80px;
+  }
+  .tomster {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .win-message {
+    font-size: 60px;
+  }
+  .tomster {
+    top: 18%;
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .win-message {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+  .tomster {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .tomster {
+    width: 120px;
+    top: 8%;
+  }
 }
 
 .fine-print {
@@ -128,18 +222,36 @@ body {
   margin: 0;
   bottom: 0;
   text-align: center;
+  font-size: 12px;
   width: 100%;
 }
 
 .footer {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  color: #e8a89d;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #ffe1c1;
+  font-size: 14px;
+}
+
+@media only screen and (min-height: 740px) {
+  .footer {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 16px;
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    font-size: 14px;
+  }
 }
 
 .github-link {
-  color: #e8a89d;
+  color: #ffe1c1;
   text-decoration: none;
   display: inline-block;
 }
@@ -150,4 +262,18 @@ body {
   margin-right: 20px;
 }
 
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}
 
+.display-none {
+  display: none;
+}
+
+@media print {
+  .print-only, .print-only * {
+    display: inline-block !important;
+  }
+}

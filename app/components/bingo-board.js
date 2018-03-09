@@ -7,8 +7,6 @@ const ROW_SIZE = 5;
 const COLUMN_SIZE = 5;
 const DIAGONAL_SIZE = 5;
 
-const ESCAPE_KEYCODE = 27;
-
 export default Component.extend({
   classNames: ['bingo-board'],
 
